@@ -10,7 +10,7 @@ alfred--actions
 
 ![Change Folder](https://raw.githubusercontent.com/EvanLovely/alfred--actions/master/readme-assets/how_to_change_default_folder.png)
 
-- Download any of the scripts in the [actions directory](https://github.com/EvanLovely/alfred--actions/tree/master/actions) of this repo and place them in the directory from the previous step. All of them can be easily grabbed by [downloading this whole repo](https://github.com/EvanLovely/alfred--actions/archive/master.zip) and pulling out the actions directory.
+- Download any of the scripts from my [clipboard actions repo](https://github.com/EvanLovely/clipboard-actions) place them in the directory from the previous step. All of them can be easily grabbed by [here](https://github.com/EvanLovely/clipboard-actions/archive/master.zip). For the command-line savvy, I'd recommend just cloning that repo in a sub-folder, then you can have your own and and updatable folder from this one.
 
 # Useage Instructions
 
