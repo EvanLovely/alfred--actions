@@ -98,6 +98,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>E945E8EE-B7C3-4967-AB40-52FFBED3071E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>646A51E7-768E-4802-927A-E06F02D08E8A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>EA7715C4-EE40-413D-A235-0E089B2325EC</key>
 		<array>
 			<dict>
@@ -172,11 +183,11 @@
 				<key>argument</key>
 				<integer>1</integer>
 				<key>hotkey</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>524288</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>C</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -226,6 +237,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>clipactions</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>5C011BE8-F36E-4EA7-A402-4E050786C2C7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
@@ -249,19 +273,6 @@ fi</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>167A4C45-8CD8-4E4C-8138-2B841D77ED25</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>clipactions</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>5C011BE8-F36E-4EA7-A402-4E050786C2C7</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -319,6 +330,33 @@ sh clipactions.sh '{query}' "$dir"</string>
 			<string>646A51E7-768E-4802-927A-E06F02D08E8A</string>
 			<key>version</key>
 			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E945E8EE-B7C3-4967-AB40-52FFBED3071E</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -388,6 +426,11 @@ osascript -e 'tell application "System Events" to keystroke "v" using {command d
 		<dict>
 			<key>ypos</key>
 			<real>190</real>
+		</dict>
+		<key>E945E8EE-B7C3-4967-AB40-52FFBED3071E</key>
+		<dict>
+			<key>ypos</key>
+			<real>440</real>
 		</dict>
 		<key>EA7715C4-EE40-413D-A235-0E089B2325EC</key>
 		<dict>
