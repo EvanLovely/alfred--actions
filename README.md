@@ -33,4 +33,16 @@ alfred--actions
 
 ![Hotkey for selected text](https://raw.githubusercontent.com/EvanLovely/alfred--actions/master/readme-assets/hotkey_for_text_selection.png)
 
+# Using without Alfred
+
+- Copy anything
+- Run the action as a script
+
+---
+
+# Contributing to Actions List
+
+- Fork this repo
+- Add an action to the folder
+- Submit Pull Request
 
