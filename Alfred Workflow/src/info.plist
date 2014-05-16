@@ -237,19 +237,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>triggerid</key>
-				<string>clipactions</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>5C011BE8-F36E-4EA7-A402-4E050786C2C7</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
@@ -263,6 +250,8 @@ if [[ "$file" == *".sh" ]]; then
     ruby "$file"
   elif [[ "$file" == *".py" ]]; then
     python "$file"
+  elif [[ "$file" == *".php" ]]; then
+	php "$file"
   else
     "./$file"
 fi</string>
@@ -273,6 +262,19 @@ fi</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>167A4C45-8CD8-4E4C-8138-2B841D77ED25</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>clipactions</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>5C011BE8-F36E-4EA7-A402-4E050786C2C7</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -334,6 +336,25 @@ sh clipactions.sh '{query}' "$dir"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>sh {query}
+osascript -e 'tell application "System Events" to keystroke "v" using {command down}'
+</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B5F6478E-117B-432F-8D5B-6D1C3F8D815B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -357,25 +378,6 @@ sh clipactions.sh '{query}' "$dir"</string>
 			<string>E945E8EE-B7C3-4967-AB40-52FFBED3071E</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>127</integer>
-				<key>script</key>
-				<string>sh {query}
-osascript -e 'tell application "System Events" to keystroke "v" using {command down}'
-</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B5F6478E-117B-432F-8D5B-6D1C3F8D815B</string>
-			<key>version</key>
-			<integer>0</integer>
 		</dict>
 	</array>
 	<key>readme</key>
