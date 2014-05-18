@@ -95,6 +95,17 @@
 				<string>Paste it as well</string>
 			</dict>
 		</array>
+		<key>B02F849A-ABE9-4870-9F32-6369E638798E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F44B64F3-4464-46A4-8316-4D5BFBC74449</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>B5F6478E-117B-432F-8D5B-6D1C3F8D815B</key>
 		<array>
 			<dict>
@@ -137,6 +148,25 @@
 			</dict>
 		</array>
 		<key>EA7715C4-EE40-413D-A235-0E089B2325EC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>80E2F342-5547-47B9-BBDE-B52ADAE05E9F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C1367D0A-4E72-485C-A2BD-7350546B01F2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>F44B64F3-4464-46A4-8316-4D5BFBC74449</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -279,6 +309,46 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsmulti</key>
+				<false/>
+				<key>filetypes</key>
+				<array>
+					<string>net.daringfireball.markdown</string>
+					<string>org.sass-lang</string>
+					<string>public.css</string>
+					<string>public.php-script</string>
+					<string>public.plain-text</string>
+				</array>
+				<key>name</key>
+				<string>Action Contents of File</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>B02F849A-ABE9-4870-9F32-6369E638798E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>cat {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F44B64F3-4464-46A4-8316-4D5BFBC74449</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>127</integer>
 				<key>script</key>
@@ -349,7 +419,7 @@ fi</string>
 				<key>runningsubtext</key>
 				<string>one moment...</string>
 				<key>script</key>
-				<string>dir="$HOME/Dropbox/scripts/clipboard-actions"
+				<string>dir="$HOME/Dropbox/utilities/clipboard-actions"
 sh clipactions.sh '{query}' "$dir"</string>
 				<key>subtext</key>
 				<string>Fire actions based on clipboard contents</string>
@@ -478,6 +548,11 @@ osascript -e 'tell application "System Events" to keystroke "v" using {command d
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>B02F849A-ABE9-4870-9F32-6369E638798E</key>
+		<dict>
+			<key>ypos</key>
+			<real>330</real>
+		</dict>
 		<key>B5F6478E-117B-432F-8D5B-6D1C3F8D815B</key>
 		<dict>
 			<key>ypos</key>
@@ -507,6 +582,11 @@ osascript -e 'tell application "System Events" to keystroke "v" using {command d
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>F44B64F3-4464-46A4-8316-4D5BFBC74449</key>
+		<dict>
+			<key>ypos</key>
+			<real>330</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
