@@ -6,7 +6,7 @@ alfred--actions
 # Install Instructions
 
 - [Download](https://github.com/EvanLovely/alfred--actions/blob/master/Alfred%20Workflow/Actions.alfredworkflow?raw=true) the Alfred Worfklow (requires paid [PowerPack](http://www.alfredapp.com/powerpack/) to install).
-- *Optionally* set your folder where the workflow will look for scripts/actions to execute. This is set to `~/Dropbox/scripts/clipboard-actions/` by default. You can changed it by double-clicking the Alfred Workflow object shown below:
+- *Optionally* set your folder where the workflow will look for scripts/actions to execute. This is set to `~/Dropbox/utilities/clipboard-actions/` by default. You can changed it by double-clicking the Alfred Workflow object shown below:
 
 ![Change Folder](https://raw.githubusercontent.com/EvanLovely/alfred--actions/master/readme-assets/how_to_change_default_folder.png)
 
