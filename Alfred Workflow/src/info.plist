@@ -370,7 +370,7 @@
 				<integer>0</integer>
 				<key>script</key>
 				<string>file="{query}"
-
+cd "$(dirname "$file")"
 if [[ "$file" == *".sh" ]]; then
     sh "$file"
   elif [[ "$file" == *".applescript" ]]; then

@@ -1,7 +1,7 @@
 dir="$2"
 echo "<items>"
 IFS=$'\n'
-for i in $(find "$dir" -follow -type f -not -name ".*" -not -path "*/.*" -not -name "LICENSE" -not -iname "readme.md"); do
+for i in $(find "$dir" -follow -type f -not -name ".*" -not -path "*/.*" -not -name "_*" -not -name "LICENSE" -not -iname "readme.md"); do
   title="$(basename "$i")"
   subtitle="$(head -1 "$i")"
 
