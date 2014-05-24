@@ -516,7 +516,7 @@ osascript -e 'tell application "System Events" to keystroke "v" using {command d
 				<string>one moment...</string>
 				<key>script</key>
 				<string>dir="$HOME/Dropbox/utilities/clipboard-actions"
-sh clipactions.sh '{query}' "$dir"</string>
+bash clipactions.sh '{query}' "$dir"</string>
 				<key>subtext</key>
 				<string>Fire actions based on clipboard contents</string>
 				<key>title</key>
