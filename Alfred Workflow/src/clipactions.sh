@@ -1,14 +1,14 @@
+arg="${1// /.*}"
 dir="$2"
 echo "<items>"
+search="$(find "$dir" -follow -type f -not -name ".*" -not -path "*/.*" -not -name "_*" -not -path "*/_*" -not -name "LICENSE" -not -iname "readme.md")"
+results="$(echo "$search" | egrep -i "$arg")"
+# @todo : Search first line (subtitle) of file as well in a fast way
 IFS=$'\n'
-for i in $(find "$dir" -follow -type f -not -name ".*" -not -path "*/.*" -not -name "_*" -not -path "*/_*" -not -name "LICENSE" -not -iname "readme.md"); do
+for i in $results; do
   title="$(basename "$i")"
-  subtitle="$(head -1 "$i")"
-
-  # If the argument is empy (show all), or if the argument is in the title or subitle, show them. Spaces in arguments are '.*' in RegEx.
-  if [[ "$1" == "" || "$(echo "$title" | egrep -ic "${1// /.*}")" != "0" || "$(echo "$subtitle" | egrep -ic "${1// /.*}")" != "0" ]]; then
-    echo "<item arg=\"$i\" type='file' valid='YES' uid=\"$i\"><title><![CDATA[$title]]></title><subtitle><![CDATA[$subtitle]]></subtitle></item>"
-  fi
+  subtitle="$(head -1 "$i")"    
+  echo "<item arg=\"$i\" type='file' valid='YES' uid=\"$i\"><title><![CDATA[$title]]></title><subtitle><![CDATA[$subtitle]]></subtitle></item>"
 done
 unset IFS
 echo "</items>"
